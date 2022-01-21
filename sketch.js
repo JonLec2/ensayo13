@@ -4,7 +4,7 @@ const Bodies = Matter.Bodies;
 const Constraint = Matter.Constraint;
 var engine, world;
 
-var bot1, bot2, bot3, bot4;
+
 
 var gameState=0
 var playerCount=0
@@ -141,7 +141,6 @@ spider.debug=true
 spider.setCollider("rectangle", 0, 0, 500, 900)
 
 
-bot1=createSprite(200, 300, 20, 20)
 
 //piso invisible
 invisibleground=createSprite(3400, 590, 7000, 50)
@@ -813,6 +812,6 @@ function lavavol(){
 
 
 
-function touchStarted(bot1){
+function touchStarted(){
   spider.x=spider.x+8
 }
